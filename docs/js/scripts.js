@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // GET MAIN API STRAPI
     $.ajax({
-        url: "http://localhost:1337/main",
+        url: "http://localhost:1337/prueba",
         success: function( result ) {
           $("#main-title").html(result.title);
           $("#description").html(result.description);

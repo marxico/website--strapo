@@ -1,0 +1,15 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_titles",
+  "info": {
+    "name": "main-title",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}
