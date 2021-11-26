@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "messages",
   "info": {
-    "name": "messages"
+    "name": "messages",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,6 +14,14 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
     }
   }
 }

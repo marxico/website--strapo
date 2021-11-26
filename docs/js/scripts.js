@@ -59,10 +59,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // SEND FORM POST MESSAGES API STRAPI
     $("#submitButton").click(function() {
+      console.log(  $("#datee").val())
         $.ajax({
             type: "POST",
             url: "http://localhost:1337/messages",
-            data: {name: $("#name").val()},
+            data: {name: $("#name").val(),
+            email: $("#email").val(),
+            date: $("#datee").val()},
             success: function( res ){
                 console.log('Mensaje Enviado',res)
             }
